@@ -1,0 +1,24 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #f0f9f4;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+}
+.navbar h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.navbar li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
