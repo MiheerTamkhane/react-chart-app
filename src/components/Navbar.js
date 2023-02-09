@@ -6,7 +6,11 @@ export const Navbar = () => {
       <h1>React Chart</h1>
       <ul>
         <li>
-          <a href="#" className="link">
+          <a
+            href="https://github.com/MiheerTamkhane"
+            target="_blank"
+            className="link"
+          >
             GitHub
           </a>
         </li>

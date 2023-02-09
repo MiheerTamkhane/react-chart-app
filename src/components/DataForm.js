@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Input, Button } from "@chakra-ui/react";
+import { Input, Button, Select } from "@chakra-ui/react";
 export const DataForm = ({ submitHandler }) => {
   const [yAxis, setYAxis] = useState("");
   const [xAxis, setXAxis] = useState("");
-  const [bothAxis, setBothAxis] = useState({ x: [], y: [] });
+  const [type, setType] = useState("");
+  const [bothAxis, setBothAxis] = useState({ x: [], y: [], type: "" });
 
   function xAxisHandler(e) {
     let val = e.target.value;
@@ -25,6 +26,11 @@ export const DataForm = ({ submitHandler }) => {
 
     setBothAxis((prevAxes) => ({ ...prevAxes, y: [...arr] }));
   }
+
+  function typeHandler(val) {
+    setType(val);
+    setBothAxis((prevAxes) => ({ ...prevAxes, type: val }));
+  }
   return (
     <form
       className="form"
@@ -35,8 +41,6 @@ export const DataForm = ({ submitHandler }) => {
         } else {
           submitHandler(bothAxis);
         }
-        setXAxis("");
-        setYAxis("");
       }}
     >
       <section>
@@ -64,6 +68,18 @@ export const DataForm = ({ submitHandler }) => {
           placeholder="Y-axis values"
           onChange={yAxisHandler}
         />
+      </section>
+      <section>
+        <Select
+          required
+          placeholder="Select graph type"
+          value={type}
+          onChange={(e) => typeHandler(e.target.value)}
+        >
+          <option value="bar">Bar</option>
+          <option value="line">Line</option>
+          <option value="area">Area</option>
+        </Select>
       </section>
 
       <div className="btn-wrapper">

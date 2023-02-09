@@ -4,18 +4,15 @@ import { MyChart } from "./MyChart";
 import "./Main.css";
 
 export const Main = () => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState({ x: [], y: [], type: "" });
 
   function submitHandler(axes) {
     setData(axes);
   }
-  console.log(data);
   return (
     <main className="main-conatainer">
       <DataForm submitHandler={submitHandler} />
-      <section>
-        <MyChart data={data} />
-      </section>
+      <section>{data?.y.length > 0 && <MyChart data={data} />}</section>
     </main>
   );
 };
