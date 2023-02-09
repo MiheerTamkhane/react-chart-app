@@ -1,0 +1,34 @@
+.main-conatainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* border: 1px solid blueviolet; */
+}
+.main-conatainer section {
+  margin: 0 auto;
+}
+.form {
+  min-width: 60vw;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+  padding-top: 0rem;
+}
+.form section {
+  margin: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.chart-container {
+  width: fit-content;
+  padding-bottom: 1.2rem;
+}
+.chart-container h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
