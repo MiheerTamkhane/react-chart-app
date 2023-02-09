@@ -53,4 +53,4 @@ npm start
 
 ## Screen shots
 
-![alt text](https://github.com/MiheerTamkhane/react-chart-app/blob/dev/plain.jpg?raw=true)
+![alt text](https://github.com/MiheerTamkhane/react-chart-app/blob/dev/src/assets/plain.png?raw=true)
