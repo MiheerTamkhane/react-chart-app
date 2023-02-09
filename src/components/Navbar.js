@@ -10,6 +10,7 @@ export const Navbar = () => {
             href="https://github.com/MiheerTamkhane"
             target="_blank"
             className="link"
+            rel="noreferrer"
           >
             GitHub
           </a>
