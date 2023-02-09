@@ -50,3 +50,7 @@ npm start
 ## Authors
 
 - [@Miheer](https://www.github.com/miheertamkhane)
+
+## Screen shots
+
+![alt text](https://github.com/MiheerTamkhane/react-chart-app/blob/dev/plain.jpg?raw=true)
