@@ -1,22 +1,20 @@
 import { useState } from "react";
 import Chart from "react-apexcharts";
 
-export const MyChart = () => {
-  const [averageTemp, setAverageTemp] = useState([1000, 700, 300, 400]);
-  const [date, setDate] = useState([12, 13, 14, 15]);
-
+export const MyChart = ({ data }) => {
+  const { x, y } = data;
   const series = [
     //data on the y-axis
     {
       name: "Y-axis data",
-      data: averageTemp,
+      data: y,
     },
   ];
   const options = {
     //data on the x-axis
     chart: { id: "bar-chart" },
     xaxis: {
-      categories: date,
+      categories: x,
     },
     fill: {
       colors: ["#319795"],
