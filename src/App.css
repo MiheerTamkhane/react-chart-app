@@ -17,6 +17,9 @@
   list-style: none;
   font-size: 1.2rem;
 }
+.navbar li:hover {
+  text-decoration: underline;
+}
 .navbar ul {
   display: flex;
   align-items: center;
